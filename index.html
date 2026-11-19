@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Khám phá những điểm đến, món ăn và nét văn hóa đặc sắc của Việt Nam.">
+  <title>Khám phá Việt Nam</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      line-height: 1.5;
+      background: #f4f4f4;
+    }
+
+    .site-header {
+      padding: 15px;
+      background: #245c45;
+      color: white;
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .brand,
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+    }
+
+    .hero {
+      padding: 50px 20px;
+      text-align: center;
+      background: #dcebe1;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 15px;
+      background: #245c45;
+      color: white;
+      text-decoration: none;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    .destination-grid,
+    .info-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .destination-card,
+    .info-panel {
+      flex: 1;
+      min-width: 220px;
+      padding: 15px;
+      background: white;
+    }
+
+    .destination-card {
+      padding: 0;
+    }
+
+    .destination-card img {
+      display: block;
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+    }
+
+    .site-footer {
+      padding: 15px;
+      background: #245c45;
+      color: white;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-content">
+      <a class="brand" href="#trang-chu">Khám phá Việt Nam</a>
+      <nav aria-label="Điều hướng chính">
+        <ul>
+          <li><a href="#diem-den">Điểm đến</a></li>
+          <li><a href="#trai-nghiem">Trải nghiệm</a></li>
+          <li><a href="#cam-nang">Cẩm nang</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="trang-chu" aria-labelledby="hero-title">
+    <div class="hero-content">
+      <p class="eyebrow">Một dải đất, ngàn điều kỳ thú</p>
+      <h1 id="hero-title">Việt Nam trong tim</h1>
+      <p>Từ núi non hùng vĩ đến biển xanh thơ mộng, cùng bắt đầu hành trình khám phá vẻ đẹp quê hương.</p>
+      <a class="button" href="#diem-den">Khám phá ngay</a>
+    </div>
+  </section>
+
+  <main>
+    <section id="diem-den" aria-labelledby="destinations-title">
+      <div class="section-heading">
+        <h2 id="destinations-title">Điểm đến nổi bật</h2>
+        <p>Ba gợi ý cho hành trình đầu tiên của bạn.</p>
+      </div>
+      <div class="destination-grid">
+        <article class="destination-card">
+          <img
+            src="https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=900&q=80"
+            alt="Những dãy núi đá vôi xanh soi bóng xuống mặt nước ở vịnh Hạ Long"
+            loading="lazy"
+          >
+          <div class="card-content">
+            <h3>Vịnh Hạ Long</h3>
+            <p>Chiêm ngưỡng những đảo đá vôi kỳ vĩ giữa làn nước xanh ngọc.</p>
+            <a href="https://whc.unesco.org/en/list/672/" target="_blank" rel="noopener noreferrer">Tìm hiểu về di sản UNESCO</a>
+          </div>
+        </article>
+        <article class="destination-card">
+          <img
+            src="https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?auto=format&fit=crop&w=900&q=80"
+            alt="Phố cổ Hội An với những ngôi nhà vàng và đèn lồng rực rỡ"
+            loading="lazy"
+          >
+          <div class="card-content">
+            <h3>Phố cổ Hội An</h3>
+            <p>Dạo bước qua những con phố cổ kính, ngắm đèn lồng khi đêm xuống.</p>
+            <a href="https://whc.unesco.org/en/list/948/" target="_blank" rel="noopener noreferrer">Tìm hiểu về di sản UNESCO</a>
+          </div>
+        </article>
+        <article class="destination-card">
+          <img
+            src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80"
+            alt="Phong cảnh núi non hùng vĩ với mây phủ trên những sườn đồi"
+            loading="lazy"
+          >
+          <div class="card-content">
+            <h3>Sa Pa</h3>
+            <p>Hít thở không khí trong lành và khám phá vẻ đẹp núi rừng Tây Bắc.</p>
+            <a href="https://vietnam.travel/" target="_blank" rel="noopener noreferrer">Khám phá du lịch Việt Nam</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="trai-nghiem" aria-labelledby="experiences-title">
+      <div class="section-heading">
+        <h2 id="experiences-title">Hương vị và trải nghiệm</h2>
+        <p>Những điều không nên bỏ lỡ khi khám phá Việt Nam.</p>
+      </div>
+      <div class="info-grid">
+        <div class="info-panel">
+          <h3>Món ngon nên thử</h3>
+          <ul>
+            <li>Phở bò nóng hổi cho buổi sáng</li>
+            <li>Bánh mì giòn với nhiều loại nhân</li>
+            <li>Gỏi cuốn tươi ngon chấm nước mắm</li>
+            <li>Cà phê sữa đá đậm đà</li>
+          </ul>
+        </div>
+        <div class="info-panel" id="cam-nang">
+          <h3>Chuẩn bị cho chuyến đi</h3>
+          <ol>
+            <li>Chọn điểm đến và thời gian phù hợp.</li>
+            <li>Đặt vé, chỗ ở và tìm hiểu phương tiện di chuyển.</li>
+            <li>Mang theo giấy tờ, trang phục phù hợp và kem chống nắng.</li>
+            <li>Tôn trọng văn hóa địa phương, giữ gìn cảnh quan sạch đẹp.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Khám phá Việt Nam · Tự hào vẻ đẹp quê hương</p>
+  </footer>
+</body>
+</html>
